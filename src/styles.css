@@ -26,9 +26,12 @@ body
     position: absolute;
     inset: 0;
     opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
 }
 .slide[data-active] {
     opacity: 1;
+    transition-delay: 0ms;
 
 }
 
@@ -71,4 +74,15 @@ body
 
 .carousel-btn.next {
     right: 1rem;
+}
+
+.dots {
+    position: absolute;
+    top: 80%;
+    left:40%;
+    z-index: 2;
+    font-size: 2em;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.1);
+
 }
