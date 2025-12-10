@@ -62,4 +62,10 @@ const renderEmptyDots = (length) => {
     
 }
 
+const clickNextButton = () => {
+    buttons[1].click();
+
+};
+
+setInterval(clickNextButton, 5000);
 renderEmptyDots(slidesLength);
